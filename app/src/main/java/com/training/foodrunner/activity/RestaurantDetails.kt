@@ -137,7 +137,7 @@ class RestaurantDetails : AppCompatActivity() {
                     override fun getHeaders(): MutableMap<String, String> {
                         val headers = HashMap<String, String>()
                         headers["content-type"] = "application/json"
-                        headers["token"] = "0347b8d3845796"
+                        headers["token"] = "############"
                         return headers
                     }
                 }
