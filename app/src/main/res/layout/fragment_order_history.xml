@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.OrderHistoryFragment">
+
+
+    <TextView
+    android:id="@+id/txtPreviousOrder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/your_previous_orders_are_listed_below"
+    android:textSize="20sp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/divider"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:paddingTop="5dip"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtPreviousOrder" />
+
+    <RelativeLayout
+        android:id="@+id/noHistoryLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imgNoHistory"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_history"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_do_not_have_order_history"
+            android:layout_below="@+id/imgNoHistory"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOrderHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnOrderHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".fragment.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imgProfilePicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profilelogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/txtUserNameProfile"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/username_profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/imgProfilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_edit_text"
+        android:elevation="1dp"/>
+
+    <TextView
+        android:id="@+id/txtMobileNumberProfile"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/mobile_number_profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/txtUserNameProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit_text"
+        android:elevation="1dp"/>
+
+    <TextView
+        android:id="@+id/txtEmailProfile"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/email_profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/txtMobileNumberProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit_text"
+        android:elevation="1dp"/>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/address_profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/txtEmailProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit_text"
+        android:elevation="1dp"/>
+
+</RelativeLayout>
